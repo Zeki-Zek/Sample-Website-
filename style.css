@@ -1,0 +1,317 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+}
+
+:root {
+    --primary: #FFB26F;
+    --lightcolor: #F5F5F5;
+    --darkcolor: #2B2B2B;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+@media (min-width: 760px) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media (min-width: 760px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width: 760px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/*header*/
+
+.header {
+    height: 12.5rem;
+    background-color: var(--darkcolor);
+    border: 0 0 2px 0;
+    font-size: 1.5rem;
+}
+
+.logo {
+    color: #B17457;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo h2 {
+    font-size: 1.8rem;
+}
+h2 span{
+    color: var(--primary);
+}
+
+
+.nav ul li a {
+    color: #B17457;
+    text-style: none;
+}
+
+.nav ul li a span {
+    color: var(--primary);
+}
+
+
+.headerWrapper {
+    height: 12.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav ul li a:hover {
+    color: var(--primary);
+}
+/*header end*/
+
+/* banner */
+.banner {
+    padding: 9rem 0;
+}
+
+.bannerContents h1{
+    color: var(--primary);
+    fontsize: 2rem;
+}
+
+.bannerContents {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    font-size: 1.5rem;
+}
+
+.bannerWrapper {
+    display: flex;
+    align-items: center;
+}
+
+.bannerContents h1 {
+    font-size: 7rem;
+    line-height: 7rem;
+}   
+
+.bannerContents a {
+    padding: 1.5rem 2rem;
+    width: 150px;
+    background-color: var(--primary);
+    color: var(--darkcolor);
+    border-radius: 30px;
+}
+
+.bannerContents p {
+    text-align: justify;
+    width: 38rem;
+    line-height: 3.5rem;
+}
+
+.bannerContents a:hover {
+    background-color: var(--darkcolor);
+    color: var(--lightcolor);
+}
+
+.bannerImage img {
+    height: 700px;
+}
+
+/* end of banner */
+
+
+/* services */
+.services {
+    background-color: var(--darkcolor);
+    height: 70rem;
+}
+
+.servicesWrapper {
+    display: flex;
+    justify-content: space-between;
+    height: 70rem;
+    padding: 11rem 0 12rem 0;
+}
+
+.description {
+    color: var(--primary);
+}
+
+.servicesContents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2.8rem 0 2.5rem 0;
+    gap: 1.5rem;
+    width: 34rem;
+}
+
+.servicesContents i {
+    font-size: 6rem;
+    padding: 2rem 0 2rem 0;
+}
+
+.servicesContents h2 {
+    padding: 2rem 0 1rem 0;
+    font-size: 1.8rem;
+}
+
+.servicesContents p {
+    text-align: justify;
+    color: white;
+    font-size: 1.5rem;
+    line-height: 3.5rem;
+}
+
+.servicesContents a {
+    padding: 1.3rem 1.8rem;
+    background-color: var(--primary);
+    color: var(--darkcolor);
+    border-radius: 30px;
+    font-size: 1.5rem;
+    border: 2px solid var(--darkcolor);
+}
+
+.servicesContents a:hover {
+    background-color: var(--lightcolor);
+    border: 2px solid var(--darkcolor);
+}
+/* end of services */
+
+/* about me */
+.aboutMe {
+    background-color: var(--lightcolor);
+    height: 70rem;
+}
+
+.aboutMeWrapper {
+    display: flex;
+    height: 70rem;
+    padding: 8rem 0 8rem 0;
+    align-items: center;
+}
+
+.aboutMeContents h1{
+    font-size: 3.5rem;
+    color: var(--primary);
+}
+
+.aboutMeContents {
+    display: flex;
+    flex-direction: column;
+    gap: 2.6rem;
+    padding-left: 15rem;
+}
+
+.aboutMeContents p {
+    font-size: 1.6rem;
+    text-align: justify;
+    line-height: 3.5rem;
+}
+/* end of aboutme */
+
+
+
+/* contactSection */
+.contactSection {
+    background-color: var(--primary);
+    height: 30rem;
+}
+
+.contactWrapper {
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    padding: 6rem 0 6rem 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contactWrapper h1 {
+    font-size: 3.2rem;
+}
+
+.contactWrapper p {
+    font-size: 1.6rem;
+}
+
+.contactWrapper a {
+    padding: 1.3rem 1.8rem;
+    background-color: var(--darkcolor);
+    color: var(--lightcolor);
+    border-radius: 30px;
+    font-size: 1.5rem;
+    border: 2px solid var(--darkcolor);
+}
+
+.contactWrapper a:hover {
+    background-color: var(--lightcolor);
+    color: var(--darkcolor);
+    border: .2rem solid var(--darkcolor);
+}
+/* end of contactSection */
+
+/* footer */
+.footer {
+    height: 12rem;
+    background-color: var(--darkcolor)
+}
+
+.navigation {
+    padding: 0 1.8rem 0 1.8rem;
+    display: flex;
+    gap: 3rem;
+}
+
+.footerWrapper {
+    height: 12rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 5.5rem 0 5.5rem 0; */
+}
+
+.navigation i {
+    font-size: 3.2rem;
+}
+
+.address {
+    color: var(--lightcolor);
+    font-size: 1.6rem;
+    margin-right: 3rem;
+}
+
+.copyright {
+    color: var(--lightcolor);
+    font-size: 1.6rem;
+}
+/* end of footer */
